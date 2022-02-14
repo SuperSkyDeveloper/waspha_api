@@ -1,0 +1,3 @@
+ALTER TABLE categories
+ADD COLUMN `en` VARCHAR(150)  AFTER `slug`,
+ADD COLUMN `ar` VARCHAR(150) AFTER `slug`;

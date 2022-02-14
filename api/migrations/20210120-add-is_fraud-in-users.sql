@@ -1,0 +1,1 @@
+ALTER TABLE `users` add column is_fraud TINYINT DEFAULT 0;

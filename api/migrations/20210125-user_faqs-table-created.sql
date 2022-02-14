@@ -1,0 +1,17 @@
+CREATE TABLE `user_faqs` (
+
+  `createdAt` DATETIME DEFAULT NULL,
+
+  `updatedAt` DATETIME DEFAULT NULL,
+
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+
+  `title` VARCHAR(255) DEFAULT NULL,
+
+  `description` TEXT,
+
+  PRIMARY KEY (`id`),
+
+  UNIQUE KEY `id` (`id`)
+
+) ENGINE=INNODB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;

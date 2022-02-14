@@ -1,0 +1,2 @@
+ALTER TABLE stores
+ADD COLUMN `ar` VARCHAR(100) DEFAULT NULL  AFTER `business_name`;

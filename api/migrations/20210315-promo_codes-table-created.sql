@@ -1,0 +1,26 @@
+CREATE TABLE `promo_codes` (
+  
+  `id` int NOT NULL AUTO_INCREMENT,
+  `promo_code` varchar(50) DEFAULT NULL,
+  `country_id` int(11) DEFAULT NULL,
+  `discount` double DEFAULT 0,
+  `discount_type` varchar(20) DEFAULT 'percentage',
+  `description` text DEFAULT NULL,
+  `image` text DEFAULT NULL,  
+  `start_time` datetime DEFAULT NULL,
+  `end_time` datetime DEFAULT NULL,  
+  `min_order_amount` double DEFAULT 0,
+  `max_discount` double DEFAULT NULL,
+  `number_of_uses` int DEFAULT 1,
+  `vendor_id` int DEFAULT NULL,
+  `category_id` int DEFAULT NULL,
+  `subcategory_id` int DEFAULT NULL,
+  `payment_methods` varchar(50) DEFAULT NULL,
+  `service_modes` varchar(20) DEFAULT NULL,
+  `status_id` int DEFAULT NULL,
+  `createdAt` datetime DEFAULT NULL,
+  `updatedAt` datetime DEFAULT NULL,
+  `deletedAt` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,31 @@
+/**
+ * Status.js
+ *
+ * @description :: A model definition represents a database table/collection.
+ * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
+ */
+
+module.exports = {
+  datastore:'default',
+  tableName: 'statuses',
+  primaryKey: 'id',
+  attributes: {
+    slug: {
+      type: 'string',
+      required: true,
+      unique: true
+      },
+    description: {
+      type: 'string',
+      required: true,
+      },
+    deletedAt: {
+      type: 'ref',
+      columnType: 'datetime',
+      required: false
+      }
+   
+  },
+
+};
+
